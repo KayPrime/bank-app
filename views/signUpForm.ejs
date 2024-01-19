@@ -1,0 +1,46 @@
+<%- include("partials/head.ejs") %>
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-main-containter">
+            <form action="<%= apiVersion %>/sign-up-user" method="post" class="form-container">
+                <div>
+                    <h2>Sign Up</h2>
+                </div>
+                <div class="form-inputs-container">
+                    <label for="firstname" class="labels">firstName</label>
+                    <input type="text" name="firstname" id="firstname-input" required autocomplete="off" class="inputs">
+                </div>
+                <div class="form-inputs-container">
+                    <label for="lastname" class="labels">lastname</label>
+                    <input type="text" name="lastname" id="lastname-input" required autocomplete="off" class="inputs">
+                </div>
+                <div class="form-inputs-container">
+                    <label for="email" class="labels">email</label>
+                    <input type="email" name="email" id="email-input" required autocomplete="off" class="inputs">
+                </div>
+                <div class="form-inputs-container">
+                    <label for="phone" class="tel">phone number</label>
+                    <input type="tel" name="tel" id="tel-input" required autocomplete="off" class="inputs">
+                </div>
+                <div class="form-inputs-container">
+                    <label for="address" class="labels">address</label>
+                    <input type="text" name="address" id="address-input" required autocomplete="off" class="inputs">
+                </div>
+                <div class="form-inputs-container">
+                    <label for="password" class="labels">password</label>
+                    <input type="password" name="password" id="password-input" required class="inputs">
+                </div>
+                <div class="form-inputs-container">
+                    <input type="submit" value="Login" class="btn">
+                </div>
+                <div>
+                    <p class="new-returning-question">Already have an account? login <span class="new-returning-action"><a href="<%= apiVersion %>/login">here</a></span></p>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

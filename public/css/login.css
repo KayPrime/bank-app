@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.form-main-containter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    min-height: 50vh;
+    background-color: #F3F8FF;
+    border-radius: 2rem;
+}
+
+.form-container {
+    min-height: 50vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 9rem;
+    gap: 0.5rem;
+}
+
+.form-container h2 {
+    font-size: 2rem;
+}
+
+.form-inputs-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    height: 10vh;
+    gap: 0.1rem;
+    font-size: 1.5rem;
+}
+
+.inputs {
+    width: 100%;
+    height: 50%;
+    border: 0.2rem solid #FFB534;
+    border-radius: 0.5rem;
+    outline: none;
+    padding: 0 1rem;
+    font-size: 1.2rem;
+}
+
+.btn {
+    height: 60%;
+    width: 100%;
+    font-size: 1.5rem;
+    border: 0;
+    background-color: #FFB534;
+    color: #FFFFFF;
+    border-radius: 0.5rem;
+    outline: none;
+}
+
+.inputs:focus {
+    border: 0.2rem solid #65B741;
+}
+
+.btn:hover {
+    opacity: 50%;
+    cursor: pointer;
+}
+
+#login-success,
+#login-fail-email,
+#login-fail-pwd {
+    text-align: center;
+    width: 100%;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+#login-success {
+    color: green;
+}
+
+#login-fail-email,
+#login-fail-pwd {
+    color: red;
+}
+
+.new-returning-question {
+    font-size: 1.2;
+}
+
+.new-returning-action > a {
+    text-decoration: none;
+    color: #FFB534;
+}
