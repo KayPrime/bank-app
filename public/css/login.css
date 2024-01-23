@@ -106,7 +106,7 @@ body {
     font-size: 1.2;
 }
 
-.new-returning-action > a {
+a {
     text-decoration: none;
     color: #FFB534;
 }

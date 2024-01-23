@@ -1,5 +1,6 @@
 function handleError(error) {
-  const err = {};
+  const err = { email: "", password: "" };
+
   if (error.message === "password is incorrect") {
     err.password = "password is incorrect";
     return err;
